@@ -1,7 +1,7 @@
  // An array holding at least 5 pictures 
  // An array holding at least 5 proverbs
 
-function randomIMG (img) {
+ function randomIMG (img) {
     // Array storing images
     var randomImage = new Array();  
     randomImage[0] = "";
