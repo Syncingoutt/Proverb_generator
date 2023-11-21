@@ -1,7 +1,7 @@
  // An array holding at least 5 pictures 
  // An array holding at least 5 proverbs
 
- function randomIMG (img) {
+function randomIMG (img) {
     // Array storing images
     var randomImage = new Array();  
     randomImage[0] = "https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg";
@@ -10,6 +10,8 @@
     randomImage[3] = "https://images.pexels.com/photos/34950/pexels-photo.jpg";
     randomImage[4] = "https://images.pexels.com/photos/40896/larch-conifer-cone-branch-tree-40896.jpeg";
 
+    var number = Math.floor(Math.random()*randomImage.length);  
+    return document.getElementById("result").innerHTML = '<img src="'+randomImage[number]+'" />';  
 }
 function randomProverb (proverb) {
     // Array storing proverbs
@@ -19,4 +21,6 @@ function randomProverb (proverb) {
     randomProverb[2] = "Don’t bite the hand that feeds you";
     randomProverb[3] = "Don’t judge a book by its cover";
     randomProverb[4] = "Don’t put all of your eggs in one basket";
+    var number = Math.floor(Math.random()*randomProverb.length);  
+    return document.getElementById("result").innerHTML = '<img src="'+randomProverb[number]+'" />'; 
 }
